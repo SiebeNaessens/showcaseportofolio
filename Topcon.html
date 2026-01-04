@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Topcon-webinar – Siebe Naessens</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+   <header>
+  <nav class="nav">
+    <div class="nav-left">
+      <div class="logo" aria-hidden="true">SN</div>
+      <div class="nav-title">
+        <strong>Portfolio Siebe Naessens</strong>
+        <span>Student Landmeetkunde · HOGENT</span>
+      </div>
+    </div>
+
+    <button class="nav-toggle" aria-label="Menu" onclick="toggleNav()">☰</button>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="index.html#over">Over mij</a>
+    
+      <a href="index.html#cv">CV</a>
+      
+
+      <!-- ACADEMIEJAREN DROPDOWN -->
+      <div class="dropdown">
+        <a href="index.html#academiejaren" class="dropbtn">Academiejaren ▾</a>
+        <div class="dropdown-content">
+          <a href="jaar1.html">1ste jaar</a>
+          <a href="jaar2.html">2de jaar</a>
+          <a href="jaar3.html">3de jaar</a>
+        </div>
+      </div>
+
+      <!-- ACTIVITEITEN DROPDOWN -->
+      <div class="dropdown">
+  <a href="index.html#activiteiten" class="dropbtn">Externe activiteiten ▾</a>
+  <div class="dropdown-content">
+
+    <a href="epidavros.html">Epidavros</a>
+    <a href="mycene.html">Mycene</a>
+
+    <a href="bisbeurs.html">BIS-beurs</a>
+    <a href="vlaanderen-digitaal.html">Vlaanderen Digitaal</a>
+
+    <a href="drone.html">Drone A1/A3</a>
+    <a href="AI.html">AI-webinar</a>
+    <a href="Topcon.html">Topcon-webinar</a>
+
+    <a href="kijkstage.html">Kijkstage</a>
+    <a href="opmeting.html">Opmeting tuin</a>
+    <a href="verkaveling.html">Kwalitatieve verkaveling</a>
+
+    <a href="rechtbank.html">Vredegerecht</a>
+  </div>
+</div>
+
+
+      <a href="index.html#contact" class="primary-link">Contact</a>
+    </div>
+  </nav>
+</header>
+
+    <main>
+      <section class="section section-block">
+        <div class="section-inner">
+          <h1 class="section-title">Topcon-webinar</h1>
+
+          <p class="section-subtitle">
+            Online webinar over digitaal meten en 3D-werken op de werf, van terreinmodel tot machine-aansturing.
+          </p>
+
+          <div class="muted">
+            <p>
+              Op 14/09/2025 volgde ik een webinar over digitaal meten en werken in 3D met machines. Ik kreeg een duidelijk beeld
+              van hoe een digitale workflow de stappen meten → verwerken → uitvoeren efficiënter maakt, bijvoorbeeld door een
+              3D-terreinmodel op te meten met GNSS of een totaalstation en die data door te zetten naar de machine.
+            </p>
+            <p>
+              Ik onthield vooral dat een goede digitale datastroom tijd kan besparen en fouten beperkt: correct meten en de juiste
+              gegevens doorgeven is essentieel om in 3D nauwkeurig te werken. Dit sluit aan bij mijn POP omdat ik wil groeien in
+              het begrijpen en toepassen van digitale tools in een bouw- en geo-context.
+            </p>
+          </div>
+
+         
+
+          <div style="margin-top:1.6rem;">
+            <a href="index.html" class="btn btn-primary">Terug naar hoofdpagina</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>© <span id="year"></span> Portfolio Siebe Naessens.</footer>
+  </div>
+
+  <script>
+    function toggleNav() {
+      const nav = document.getElementById("navLinks");
+      if (!nav) return;
+      nav.classList.toggle("open");
+    }
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

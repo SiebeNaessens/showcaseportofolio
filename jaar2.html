@@ -1,0 +1,130 @@
+<!-- jaar2.html -->
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>2de jaar Landmeetkunde – Siebe Naessens</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+
+  <div class="page">
+    <!-- NAV zelfde als jaar1.html (kopieer) -->
+    <!-- ... zelfde navblok als hierboven ... -->
+<header>
+  <nav class="nav">
+    <div class="nav-left">
+      <div class="logo" aria-hidden="true">SN</div>
+      <div class="nav-title">
+        <strong>Portfolio Siebe Naessens</strong>
+        <span>Student Landmeetkunde · HOGENT</span>
+      </div>
+    </div>
+
+    <button class="nav-toggle" aria-label="Menu" onclick="toggleNav()">☰</button>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="index.html#over">Over mij</a>
+    
+      <a href="index.html#cv">CV</a>
+      
+
+      <!-- ACADEMIEJAREN DROPDOWN -->
+      <div class="dropdown">
+        <a href="index.html#academiejaren" class="dropbtn">Academiejaren ▾</a>
+        <div class="dropdown-content">
+          <a href="jaar1.html">1ste jaar</a>
+          <a href="jaar2.html">2de jaar</a>
+          <a href="jaar3.html">3de jaar</a>
+        </div>
+      </div>
+
+      <!-- ACTIVITEITEN DROPDOWN -->
+      <div class="dropdown">
+  <a href="index.html#activiteiten" class="dropbtn">Externe activiteiten ▾</a>
+  <div class="dropdown-content">
+
+    <a href="epidavros.html">Epidavros</a>
+    <a href="mycene.html">Mycene</a>
+
+    <a href="bisbeurs.html">BIS-beurs</a>
+    <a href="vlaanderen-digitaal.html">Vlaanderen Digitaal</a>
+
+    <a href="drone.html">Drone A1/A3</a>
+    <a href="AI.html">AI-webinar</a>
+    <a href="Topcon.html">Topcon-webinar</a>
+
+    <a href="kijkstage.html">Kijkstage</a>
+    <a href="opmeting.html">Opmeting tuin</a>
+    <a href="verkaveling.html">Kwalitatieve verkaveling</a>
+
+    <a href="rechtbank.html">Vredegerecht</a>
+  </div>
+</div>
+
+
+      <a href="index.html#contact" class="primary-link">Contact</a>
+    </div>
+  </nav>
+</header>
+
+
+    <main>
+      <section class="section section-block">
+        <div class="section-inner">
+          <h1 class="section-title">2de jaar Landmeetkunde</h1>
+          
+          <div class="muted">
+           In mijn tweede jaar Landmeetkunde aan HoGent bouwde ik verder op de basis uit het eerste jaar en ging ik meer de diepte in. Dit jaar lag de focus sterker op moderne meet- en opnametechnieken en op grotere, meer realistische projecten waarbij nauwkeurigheid en zelfstandigheid nog belangrijker werden.
+<br><br>
+
+Een belangrijk onderdeel van dit jaar was het leren werken met laserscanners en fotogrammetrie. Ik leerde hoe je met deze technieken snel en gedetailleerd informatie kan verzamelen en hoe je die data nadien correct verwerkt en interpreteert. Door ermee te oefenen begreep ik beter wat de mogelijkheden zijn, maar ook waar je rekening mee moet houden om een betrouwbaar resultaat te krijgen.
+<br><br>
+
+Daarnaast werkte ik aan verschillende grotere projecten, met uiteenlopende opdrachten: van waarderen tot het ontwerpen van een eigen verkaveling. Deze projecten hielpen me om de theorie te koppelen aan praktijkgerichte toepassingen en om stap voor stap gestructureerder te werken aan een volledig eindresultaat.
+<br><br>
+
+Het meest leerzame moment van dit jaar was het project Internationaal. Tijdens een week in Griekenland gingen we opmetingen uitvoeren met drones en scanners. Deze ervaring was bijzonder leerrijk omdat we in een realistische context moesten samenwerken, plannen en efficiënt meten.
+<br><br>
+
+<div style="border-left:5px solid #000; padding:12px 14px; margin:10px 0; background:#f6f6f6;">
+  <div style="font-weight:700; margin-bottom:6px;">Project Internationaal – Website</div>
+  <a href="https://siebenaessens.github.io/Griekenland2025/index.html"
+     target="_blank" rel="noopener noreferrer"
+     style="font-weight:600; text-decoration:underline;">
+    https://siebenaessens.github.io/Griekenland2025/index.html
+  </a>
+</div>
+<br>
+
+Terugkijkend was mijn tweede jaar een jaar van verdieping en toepassing: ik leerde werken met moderne technologie, kreeg inzicht in grotere projecten en ontwikkelde een meer zelfstandige, methodische aanpak.
+
+
+ 
+          </div>
+          <div style="margin-top:1.6rem;">
+            <a href="index.html" class="btn btn-primary">Terug naar hoofdpagina</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>© <span id="year"></span> Portfolio Siebe Naessens.</footer>
+
+   <script>
+  function toggleNav() {
+    const nav = document.getElementById("navLinks");
+    if (!nav) return;
+    nav.classList.toggle("open");
+  }
+
+  const yearSpan = document.getElementById("year");
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+</script>
+</body>
+</html>
